@@ -1,0 +1,55 @@
+Actúa como un Desarrollador Full-Stack y Diseñador UX/UI Senior experto en el sector agroindustrial.
+
+1. Objetivo del Proyecto:
+Crear un sitio web completo, funcional y de alto impacto para AgroInn, una empresa de consultoría y administración agroecológica en Trevelin, Chubut. El sitio debe equilibrar la rigurosidad técnica de la ciencia del suelo con la calidez orgánica de la Patagonia.
+
+2. Identidad Visual y Paleta (MANDATORIO):
+
+Colores:
+
+#1A2F1A (Verde Bosque Profundo): Textos principales y branding.
+
+#A65D3F (Tierra/Arcilla): CTA Primarios y detalles de énfasis.
+
+#EEECE7 (Arena/Hueso): Fondos de sección.
+
+#FFFFFF (Blanco): Tarjetas y contenedores.
+
+Geometría: Uso estricto de formas circulares en botones, marcos de fotos y contenedores de iconos (basado en el logo).
+
+Tipografía: Playfair Display (Títulos) y Montserrat (Cuerpo).
+
+3. Responsividad y UX:
+
+Enfoque Mobile-First: El sitio debe ser 100% responsivo.
+
+Navegación: Menú hamburguesa animado en móviles y Sticky Navbar con glassmorphism.
+
+Micro-interacciones: Hover suave con elevación y smooth scroll.
+
+4. Estructura de Archivos (RAÍZ ACTUAL):
+El código debe respetar estrictamente esta organización tomando como raíz la carpeta actual (no crear subcarpetas de proyecto nuevas):
+
+Plaintext
+. (Raíz actual)
+├── index.html          # Con Meta-tags de SEO Local (Trevelin, Chubut)
+├── logo.jpeg           # Logo de referencia
+├── /css
+│   └── style.css       # Variables CSS (:root) con la paleta definida
+├── /js
+│   └── script.js       # Lógica de menú, scroll reveal y validaciones
+├── /pages
+│   ├── servicios.html
+│   ├── nosotros.html
+│   └── contacto.html
+└── /images             # Directorio para fotos locales y del valle
+5. Contenido Estratégico (Copywriting):
+
+Tono: Cercano, experto e inspirador.
+
+Secciones: Diagnóstico de Suelos, Transición Agroecológica, Administración de Establecimientos y un bloque especial sobre el Valle de Trevelin.
+
+CTA: Botón flotante de WhatsApp y botones "Solicitar Consultoría".
+
+6. Entregables:
+Proporciona el código fuente completo de cada archivo, asegurando que las rutas de enlace (href y src) sean relativas a la raíz actual.

@@ -1,0 +1,68 @@
+Actúa como un Desarrollador Full-Stack y Diseñador de Landing Pages de Alta Conversión.
+
+1. Objetivo del Proyecto:
+Crear una Landing Page (One-Page) moderna y profesional para AgroInn en Trevelin, Chubut. El objetivo principal es que el usuario entienda los servicios y realice una consulta inmediata a través de WhatsApp o el formulario.
+
+2. Identidad Visual y Paleta (MANDATORIO):
+
+Colores:
+
+Verde oscuro (primary): #1B5E20
+Verde suave (secondary): #A5D6A7
+Beige claro (background): #FAF3E0
+Gris suave (texto secundario): #6D6D6D
+Gris oscuro (texto principal): #2E2E2E
+Terracota (acento / CTA): #D84315
+
+⚙️ Uso recomendado
+    Fondo: #FAF3E0
+    Navbar / footer: #1B5E20
+    Botones principales: #1B5E20
+    Hover botones: #145A18
+    Botones secundarios / destacados: #D84315
+    Cards / secciones: blanco o beige con borde suave
+    Texto:
+    principal → #2E2E2E
+    secundario → #6D6D6D
+
+Geometría: Uso de formas circulares en botones, marcos de fotos y contenedores de iconos para ser coherente con el logo.
+
+Tipografía: Playfair Display (Títulos) y Montserrat (Cuerpo).
+
+3. Estructura de Navegación de la Landing Page:
+La navegación debe ser mediante Anclas (Anchor Links) dentro de la misma página:
+
+Inicio (Hero): Propuesta de valor impactante + CTA.
+
+Servicios: Grid de servicios con iconos circulares.
+
+Filosofía: Storytelling sobre agroecología en Trevelin.
+
+Proyectos: Galería rápida de trabajos realizados.
+
+Contacto: Formulario integrado al final.
+
+4. Estructura de Archivos (RAÍZ ACTUAL):
+Al ser una landing page, el código debe ser minimalista y respetar esta organización tomando como raíz la carpeta actual:
+
+Plaintext
+. (Raíz actual)
+├── index.html          # Única página con todas las secciones y SEO Local
+├── logo.jpeg           # Logo de referencia
+├── /css
+│   └── style.css       # Variables CSS, Layout de una sola página y Media Queries
+├── /js
+│   └── script.js       # Smooth scroll, menú móvil y validaciones
+└── /images             # Fotos del Valle de Trevelin y del equipo
+5. Requerimientos de UX y Conversión:
+
+Responsividad: 100% responsivo (Mobile-First).
+
+CTA Estratégico: Botón de WhatsApp flotante en la esquina inferior derecha.
+
+Micro-interacciones: Navbar que cambia de color al hacer scroll y animaciones de entrada (Reveal) para cada sección.
+
+Copywriting: Tono experto pero accesible, resaltando la "Producción Regenerativa en la Patagonia".
+
+6. Entregables:
+Proporciona el código completo de index.html, style.css y script.js asegurando que todos los enlaces internos de la navegación (href="#id") funcionen correctamente para el desplazamiento suave.
