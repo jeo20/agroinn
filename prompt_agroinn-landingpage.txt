@@ -7,23 +7,20 @@ Crear una Landing Page (One-Page) moderna y profesional para AgroInn en Trevelin
 
 Colores:
 
-Verde oscuro (primary): #1B5E20
-Verde suave (secondary): #A5D6A7
-Beige claro (background): #FAF3E0
-Gris suave (texto secundario): #6D6D6D
-Gris oscuro (texto principal): #2E2E2E
-Terracota (acento / CTA): #D84315
+Color,Hex,Sensación,Uso Recomendado
+Verde Neón Suave,#ccff00,"Innovación, brote nuevo, energía.",Botones de acción (CTAs) y acentos.
+Gris Carbón Profundo,#1f2937,"Seriedad, tecnología, contraste.",Textos principales y fondos oscuros.
+Verde Musgo Digital,#3a5a40,"Sostenibilidad corporativa, balance.",Encabezados o secciones secundarias.
+Blanco Humo,#f9fafb,"Limpieza absoluta, modernidad.",Fondo general del sitio.
 
-⚙️ Uso recomendado
-    Fondo: #FAF3E0
-    Navbar / footer: #1B5E20
-    Botones principales: #1B5E20
-    Hover botones: #145A18
-    Botones secundarios / destacados: #D84315
-    Cards / secciones: blanco o beige con borde suave
-    Texto:
-    principal → #2E2E2E
-    secundario → #6D6D6D
+Cómo aplicarla en tu web
+Fondos Limpios: Usa el Blanco Humo para todo el cuerpo de la página.
+
+Modo Oscuro: Puedes usar el Gris Carbón para el menú de navegación (Header) y el pie de página (Footer) para darle una estructura sólida.
+
+Llamada a la Acción: El Verde Neón debe usarse con moderación: solo para botones de "Registrarse", "Comprar" o "Contactar". Su brillo atraerá el ojo de inmediato.
+
+Gráficos: Si usas iconos, el Verde Musgo les dará un toque profesional sin ser demasiado llamativo.
 
 Geometría: Uso de formas circulares en botones, marcos de fotos y contenedores de iconos para ser coherente con el logo.
 
@@ -34,9 +31,9 @@ La navegación debe ser mediante Anclas (Anchor Links) dentro de la misma págin
 
 Inicio (Hero): Propuesta de valor impactante + CTA.
 
-Servicios: Grid de servicios con iconos circulares.
+Servicios: Grid de servicios con iconos llamativos.
 
-Filosofía: Storytelling sobre agroecología en Trevelin.
+Ecologia: Storytelling sobre agroecología en Trevelin.
 
 Proyectos: Galería rápida de trabajos realizados.
 
