@@ -1588,12 +1588,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .pdf-viewer {
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
 }
 
 .pdf-viewer iframe {
-    min-height: 500px;
+    min-height: 600px;
+    width: 100%;
 }
 
 @media (max-width: 640px) {
