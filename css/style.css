@@ -1002,6 +1002,7 @@ h1, h2, h3, h4, h5, h6 {
 .pilar-card.teal::before { background: var(--agro-salvia); }
 .pilar-card.blue::before { background: var(--agro-azul); }
 .pilar-card.gold::before { background: var(--agro-ocre); }
+.pilar-card.sky::before { background: #0ea5e9; }
 
 .pilar-card:hover {
     transform: translateY(-8px);
@@ -1045,6 +1046,7 @@ h1, h2, h3, h4, h5, h6 {
 .pilar-icon.teal { background: linear-gradient(135deg, var(--agro-salvia), #3D8B6A); }
 .pilar-icon.blue { background: linear-gradient(135deg, var(--agro-azul), #0E3D5C); }
 .pilar-icon.gold { background: linear-gradient(135deg, var(--agro-ocre), #B8860B); }
+.pilar-icon.sky { background: linear-gradient(135deg, #0ea5e9, #0284c7); }
 
 .pilar-card h3 {
     font-size: 1.15rem;
@@ -1084,6 +1086,7 @@ h1, h2, h3, h4, h5, h6 {
 .pilar-card.teal .pilar-list li::before { background: var(--agro-salvia); }
 .pilar-card.blue .pilar-list li::before { background: var(--agro-azul); }
 .pilar-card.gold .pilar-list li::before { background: var(--agro-ocre); }
+.pilar-card.sky .pilar-list li::before { background: #0ea5e9; }
 
 /* =====================
    ESCENARIOS TABLE
