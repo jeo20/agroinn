@@ -1595,6 +1595,28 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.pdf-fallback {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .pdf-viewer iframe {
+        display: none;
+    }
+    .pdf-fallback {
+        display: block;
+        text-align: center;
+        padding: 2rem;
+        background: #f3f4f6;
+        border-radius: 12px;
+    }
+    
+    .pdf-fallback p {
+        margin-bottom: 1rem;
+        color: #6b7280;
+    }
+}
+
 @media (max-width: 640px) {
     .pdf-viewer iframe {
         min-height: 400px;
