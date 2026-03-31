@@ -1559,3 +1559,19 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 640px) {
     .hidden-desktop { display: none !important; }
 }
+
+.pdf-viewer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pdf-viewer iframe {
+    min-height: 500px;
+}
+
+@media (max-width: 640px) {
+    .pdf-viewer iframe {
+        min-height: 400px;
+    }
+}
