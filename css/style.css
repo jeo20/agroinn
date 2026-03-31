@@ -928,10 +928,27 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
 }
 
-.pilar-icon svg {
+.pilar-icon svg, .pilar-icon i, .pilar-icon span {
     width: 30px;
     height: 30px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pilar-icon i {
+    font-size: 24px;
+}
+
+.pilar-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.pilar-icon span {
+    font-size: 28px;
+    line-height: 1;
 }
 
 .pilar-icon.green { background: linear-gradient(135deg, var(--agro-bosque), #14532D); }
