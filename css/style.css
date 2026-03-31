@@ -1396,6 +1396,29 @@ h1, h2, h3, h4, h5, h6 {
 /* =====================
    REGENERAR GRID
    ===================== */
+.objetivo-box {
+    background: linear-gradient(135deg, var(--agro-bosque) 0%, var(--agro-azul) 100%);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.objetivo-box h3 {
+    color: var(--agro-ocre);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.objetivo-box p {
+    color: white;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
 .regenerar-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1422,19 +1445,19 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
-    border-top: 4px solid var(--agro-bosque);
+    border-top: 4px solid var(--agro-ocre);
 }
 
 .regenerar-card:nth-child(2) {
-    border-top-color: var(--agro-salvia);
-}
-
-.regenerar-card:nth-child(3) {
     border-top-color: var(--agro-azul);
 }
 
+.regenerar-card:nth-child(3) {
+    border-top-color: var(--agro-salvia);
+}
+
 .regenerar-card:nth-child(4) {
-    border-top-color: var(--agro-ocre);
+    border-top-color: var(--agro-bosque);
 }
 
 .regenerar-card:hover {
@@ -1450,19 +1473,19 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.25rem;
-    background: var(--agro-bosque);
+    background: var(--agro-ocre);
 }
 
 .regenerar-card:nth-child(2) .regenerar-icon {
-    background: var(--agro-salvia);
-}
-
-.regenerar-card:nth-child(3) .regenerar-icon {
     background: var(--agro-azul);
 }
 
+.regenerar-card:nth-child(3) .regenerar-icon {
+    background: var(--agro-salvia);
+}
+
 .regenerar-card:nth-child(4) .regenerar-icon {
-    background: var(--agro-ocre);
+    background: var(--agro-bosque);
 }
 
 .regenerar-icon i {
