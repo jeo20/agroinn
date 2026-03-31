@@ -1588,19 +1588,56 @@ h1, h2, h3, h4, h5, h6 {
 
 .pdf-viewer {
     width: 100%;
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 1rem;
 }
 
-.pdf-viewer iframe {
-    min-height: 600px;
+#pdf-canvas {
     width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
-.pdf-fallback {
-    display: none;
+.pdf-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
 }
 
-@media (max-width: 640px) {
-    .pdf-viewer iframe {
-        min-height: 500px;
-    }
+.pdf-btn {
+    background: var(--agro-bosque);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.pdf-btn:hover:not(:disabled) {
+    background: var(--agro-azul);
+    transform: scale(1.1);
+}
+
+.pdf-btn:disabled {
+    background: #d1d5db;
+    cursor: not-allowed;
+}
+
+#page-num {
+    font-weight: 600;
+    color: var(--agro-gris);
+    min-width: 100px;
+    text-align: center;
 }

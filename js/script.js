@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScroll();
     initMobileMenu();
     initCarousel();
+    initPDFViewer();
 });
 
 function initHeaderScroll() {
@@ -187,4 +188,81 @@ function initCarousel() {
     
     // Start autoplay
     startAutoplay();
+}
+
+function initPDFViewer() {
+    const canvas = document.getElementById('pdf-canvas');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    let pdfDoc = null;
+    let pageNum = 1;
+    let pageRendering = false;
+    let pageNumPending = null;
+    
+    const pdfPath = 'Propuesta Casa Yagüe-Host, Angus & Wines - Bodega.pdf';
+    
+    pdfjsLib.getDocument(pdfPath).promise.then(function(pdfDoc_) {
+        pdfDoc = pdfDoc_;
+        renderPage(pageNum);
+    }).catch(function(error) {
+        console.error('Error loading PDF:', error);
+        canvas.style.display = 'none';
+    });
+    
+    function renderPage(num) {
+        pageRendering = true;
+        pdfDoc.getPage(num).then(function(page) {
+            const viewport = page.getViewport({scale: 1.5});
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+            
+            const renderContext = {
+                canvasContext: ctx,
+                viewport: viewport
+            };
+            
+            page.render(renderContext).promise.then(function() {
+                pageRendering = false;
+                if (pageNumPending !== null) {
+                    renderPage(pageNumPending);
+                    pageNumPending = null;
+                }
+            });
+            
+            document.getElementById('page-num').textContent = 'Página ' + num + ' de ' + pdfDoc.numPages;
+        });
+        
+        if (pageNum > 1) {
+            document.getElementById('prev-page').disabled = false;
+        } else {
+            document.getElementById('prev-page').disabled = true;
+        }
+        
+        if (pageNum < pdfDoc.numPages) {
+            document.getElementById('next-page').disabled = false;
+        } else {
+            document.getElementById('next-page').disabled = true;
+        }
+    }
+    
+    function queueRenderPage(num) {
+        if (pageRendering) {
+            pageNumPending = num;
+        } else {
+            renderPage(num);
+        }
+    }
+    
+    document.getElementById('prev-page').addEventListener('click', function() {
+        if (pageNum <= 1) return;
+        pageNum--;
+        queueRenderPage(pageNum);
+    });
+    
+    document.getElementById('next-page').addEventListener('click', function() {
+        if (pageNum >= pdfDoc.numPages) return;
+        pageNum++;
+        queueRenderPage(pageNum);
+    });
 }
